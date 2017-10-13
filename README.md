@@ -3,6 +3,16 @@ A tool for hierarchical graph clustering and succint representation of graphs, s
 
 Check example.sh for some examples of usage.
 
+## Build:
+
+Compile using ```make```.
+
+### Dependencies
+
+This tool depends on Python, javac and g++.
+
+## Full documentation
+
 |    Command    | Arguments |
 |---------------|----|
 |**create-dataset**|<**raw-data**> <**graph-out**> **options**|
