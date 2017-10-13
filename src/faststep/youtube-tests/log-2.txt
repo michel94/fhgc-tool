@@ -1,3 +1,0 @@
-Running with 2 factors.
-Elapsed time: 0:0:19 
-Community sizes: 0 622 
