@@ -1,0 +1,141 @@
+max comm size 20:	15312
+max comm size 50:	15312
+max comm size 100:	15312
+max comm size 200:	15312
+max comm size 500:	15312
+max comm size 1000:	15312
+max comm size 2000:	15324
+max comm size 5000:	15324
+max comm size 10000:	15352
+max comm size 20000:	15352
+max comm size 50000:	15352
+max comm size 100000:	15352
+Random perm:	16160
+LLP perm:	8724
+Louvain perm:	10444
+max comm size 20:	5292
+max comm size 50:	5292
+max comm size 100:	5292
+max comm size 200:	5292
+max comm size 500:	5292
+max comm size 1000:	5292
+max comm size 2000:	5292
+max comm size 5000:	5292
+max comm size 10000:	5292
+max comm size 20000:	5292
+max comm size 50000:	5292
+max comm size 100000:	5292
+Random perm:	5400
+LLP perm:	1836
+Louvain perm:	1704
+max comm size 20:	14160
+max comm size 50:	14160
+max comm size 100:	14160
+max comm size 200:	14160
+max comm size 500:	14160
+max comm size 1000:	14160
+max comm size 2000:	14160
+max comm size 5000:	14164
+max comm size 10000:	14164
+max comm size 20000:	14164
+max comm size 50000:	14228
+max comm size 100000:	14228
+Random perm:	14916
+LLP perm:	3592
+Louvain perm:	3564
+Youtube
+max comm size 20:	15312
+max comm size 50:	15312
+max comm size 100:	15312
+max comm size 200:	15312
+max comm size 500:	15312
+max comm size 1000:	15312
+max comm size 2000:	15324
+max comm size 5000:	15324
+max comm size 10000:	15352
+max comm size 20000:	15352
+max comm size 50000:	15352
+max comm size 100000:	15352
+Random perm:	16160
+LLP perm:	8724
+Louvain perm:	10444
+Amazon
+max comm size 20:	5292
+max comm size 50:	5292
+max comm size 100:	5292
+max comm size 200:	5292
+max comm size 500:	5292
+max comm size 1000:	5292
+max comm size 2000:	5292
+max comm size 5000:	5292
+max comm size 10000:	5292
+max comm size 20000:	5292
+max comm size 50000:	5292
+max comm size 100000:	5292
+Random perm:	5400
+LLP perm:	1836
+Louvain perm:	1704
+Web-google
+max comm size 20:	14160
+max comm size 50:	14160
+max comm size 100:	14160
+max comm size 200:	14160
+max comm size 500:	14160
+max comm size 1000:	14160
+max comm size 2000:	14160
+max comm size 5000:	14164
+max comm size 10000:	14164
+max comm size 20000:	14164
+max comm size 50000:	14228
+max comm size 100000:	14228
+Random perm:	14916
+LLP perm:	3592
+Louvain perm:	3564
+Youtube:\n
+max comm size 20:	15312
+max comm size 50:	15312
+max comm size 100:	15312
+max comm size 200:	15312
+max comm size 500:	15312
+max comm size 1000:	15312
+max comm size 2000:	15324
+max comm size 5000:	15324
+max comm size 10000:	15352
+max comm size 20000:	15352
+max comm size 50000:	15352
+max comm size 100000:	15352
+Random perm:	16160
+LLP perm:	8724
+Louvain perm:	10444
+Amazon:\n
+max comm size 20:	5292
+max comm size 50:	5292
+max comm size 100:	5292
+max comm size 200:	5292
+max comm size 500:	5292
+max comm size 1000:	5292
+max comm size 2000:	5292
+max comm size 5000:	5292
+max comm size 10000:	5292
+max comm size 20000:	5292
+max comm size 50000:	5292
+max comm size 100000:	5292
+Random perm:	5400
+LLP perm:	1836
+Louvain perm:	1704
+Web-google:\n
+max comm size 20:	14160
+max comm size 50:	14160
+max comm size 100:	14160
+max comm size 200:	14160
+max comm size 500:	14160
+max comm size 1000:	14160
+max comm size 2000:	14160
+max comm size 5000:	14164
+max comm size 10000:	14164
+max comm size 20000:	14164
+max comm size 50000:	14228
+max comm size 100000:	14228
+Random perm:	14916
+LLP perm:	3592
+Louvain perm:	3564

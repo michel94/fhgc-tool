@@ -1,0 +1,43 @@
+.PHONY: gitstatus.txt help clean
+BITS=
+#BITS=-m32
+#BITS=-m64
+
+all: onmi.o
+
+help:
+	echo check the makefile
+
+clean:
+	-rm -f tags *.o onmi
+
+tags:
+	ctags *.[ch]pp
+
+
+					#-Wclobbered   -Wempty-body   \ -Wignored-qualifiers  -Woverride-init   \ -Wtype-limits   -Wunused-but-set-parameter 
+# I'm including most of the -Wextra flags, but I want rid of the enum-in-conditional warning from boost
+CXXFLAGS:=       \
+          -Wmissing-field-initializers   \
+          -Wsign-compare   \
+          -Wuninitialized   \
+          -Wunused-parameter    \
+          -Wunused             \
+          -Wall -Wformat #-Werror
+CXXFLAGS += -Wextra
+
+
+#CXXFLAGS= ${BITS}     -g
+LDFLAGS+= -lrt -lm
+CC=g++
+#CXXFLAGS= ${BITS} -O3 -p -pg ${CXXFLAGS} # -DNDEBUG
+CXXFLAGS:= ${BITS} -O3        ${CXXFLAGS} # -DNDEBUG
+CXXFLAGS += -std=c++11
+#CXXFLAGS=              -O2                 
+
+onmi.o: cmdline.c onmi.cpp
+	${CC} *.cpp -c ${CXXFLAGS} ${LDFLAGS}
+
+cmdline.c.FORCE:
+	# remake cmdline.c . But it's OK unless you change the .ggo file. You'll need gengetopt(1) to be able to run this.
+	gengetopt  --unamed-opts < onmi_opts.ggo

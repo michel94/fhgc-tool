@@ -1,0 +1,36 @@
+==== INSTALL ==== 
+- "make" in root folder.
+- WARNING: FastSTEP will try to save the results to a "communities/" folder at the end of computation. Make sure it exists.
+
+==== RUN ====
+FastSTEP consists of 2 distinct applications:
+  - "quadraticdecomposition" provides a slow (O(N^2)) but quadratic method to decompose matrices.
+  - "approxdecomposition" provides a fast (linear) but approximate method.
+
+To see their usage, run them without any parameters.
+
+Possible parameters:
+ - <DecompositionType>: either "AA" or "AB". If using an AA decomposition, the underlying matrix should be square and there will be a single set of concepts per community. 
+						Note that "AB" decomposition might be appropriate even with square symmetric matrices because, unlike the "AA" decomposition, it is able to easily 
+						capture bipartite-cores.
+ - <FILE>: path to 0-indexed edge-list file. The first line should represent the size of the matrix.
+
+ - <#Factors>: Integer representing the number of factors to represent the data.
+
+ - [min iters]: Minimum number of gradient descent iterations.
+
+ - [absolute stoppage]: Gradient descent will continue while the absolute error improvement is above this threshold. (DEFAULT = 10)
+
+ - [relative stoppage]: Gradient descent will continue while the relative improvement is above this threshold. (DEFAULT = 0.01)
+
+ - [samples]: Number of samples used in approximating F. (default = #factors*number of edges)
+
+==== EXAMPLES ====
+
+- "./quadraticdecomposition AA data/2cliques.el 2"
+2cliques.el is a small matrix with two non-overlapping cliques. A quadratic decomposition with 2 factors will quickly find an optimum reconstruction.
+
+- "./approxdecomposition AA data/2cliques.el 2 10"
+The approximate decomposition is also able to absolutely recover the structure, but we need to increase the minimum number of iterations for it to converge.
+
+

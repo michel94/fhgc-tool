@@ -1,0 +1,1 @@
+['/home/michel/MEIC/Tese/fhgc/src/louvain/readclusters.py', '/home/michel/MEIC/Tese/fhgc/src/louvain/data/test-amazon/amazon.tree', 'test-amazon/amazon']

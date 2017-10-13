@@ -1,0 +1,6 @@
+echo -n "Original:							" && ls -s data/$1/orig/$1.graph | awk '{print $1;}'
+echo -n "Compressed after random permutation:				" && ls -s data/$1/random-perm/$1.graph | awk '{print $1;}'
+echo -n "Compressed using LLP:						" && ls -s data/$1/LLP-compressed/$1.graph | awk '{print $1;}'
+echo -n "Compressed using Louvain method:				" && ls -s data/$1/louvain-compressed/$1.graph | awk '{print $1;}'
+#echo -n "Compressed using FastStep recursively:				" && ls -s data/$1/faststep-compressed/$1.graph | awk '{print $1;}'
+#echo -n "Compressed using FastStep iterations:				" && ls -s data/faststep-compressed/$1.graph | awk '{print $1;}'
